@@ -27,16 +27,6 @@
 }
 
 
-.submenu {
-  color: map-get($theme-colors,'success') !important;
-  transition: all 0.3s ease-in-out;
-  
-  &:hover, &:focus, &:active{
-    color: map-get($theme-colors, 'secondary') !important;
-  }
-}
-
-
 .navbar-main {
   a:hover, :focus{
     text-decoration: none;
