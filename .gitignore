@@ -43,3 +43,7 @@ node_modules
 temp
 .env
 .env.local
+
+# folders #
+build
+live
