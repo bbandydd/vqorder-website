@@ -1,6 +1,6 @@
-mixin Product({imgSrc, productTitle, description})
-	.product-card.swiper-slide.border.border-success
+mixin Product({imgSrc, pdfSrc, productTitle, description})
+	a(href=`${pdfSrc}`,target="_blank").product-card.swiper-slide.border.border-success
 		.product-card-top(style=`background-image: url('${CWD}${imgSrc}')`)
 		.d-flex.flex-column.gap-x1.p-x1.product-card-body
 			h3.text-success.fw-semi-bold.text-center.line-clamp-1.fs-8.fs-md-11.fs-xxl-7.mb-0= productTitle 
-			//- p.text-dark.fs-10.fs-md-9.fs-xl-8.text-capitalize.lh-xl.mb-0.line-clamp-3= description 
+			p.text-dark.fs-10.fs-md-9.fs-xl-9.text-capitalize.lh-xl.mb-0.line-clamp-6= description 
