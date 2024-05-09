@@ -22509,7 +22509,7 @@ h5, .h5 {
   align-items: center;
   gap: 40px;
   padding: 10px 20px;
-  background: rgba(255, 217, 145, 0.8);
+  background: rgba(255, 217, 145, 0.5);
 }
 @media (min-width: 768px) {
   .product-card .add-section {
@@ -22527,7 +22527,7 @@ h5, .h5 {
 }
 .product-card .add-section a {
   text-decoration: none;
-  color: #124838 !important;
+  color: rgba(255, 0, 0, 0.8) !important;
   font-weight: 700;
 }
 .product-card .add-section a span {
@@ -22539,7 +22539,7 @@ h5, .h5 {
 }
 .product-card .product-card-body {
   background: rgba(255, 217, 145, 0.65);
-  min-height: 280px;
+  min-height: 300px;
 }
 .product-card:hover, .product-card:focus, .product-card:active {
   border: 2px solid #E3A476;
@@ -22547,7 +22547,7 @@ h5, .h5 {
   box-shadow: none;
 }
 .product-card:hover .add-section, .product-card:focus .add-section, .product-card:active .add-section {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 217, 145, 0.3);
 }
 
 .swiper-container {
