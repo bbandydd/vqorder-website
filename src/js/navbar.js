@@ -3,8 +3,8 @@
 -----------------------------------------------*/
 
 const navbarInit = () => {
-  const navbar = document.querySelector('[data-navbar-soft-on-scroll]');
-  const navbarContainer = document.querySelector('[data-navbar-collapse]');
+  const navbar = document.querySelector("[data-navbar-soft-on-scroll]");
+  const navbarContainer = document.querySelector("[data-navbar-collapse]");
 
   if (navbar) {
     const windowHeight = window.innerHeight;
@@ -23,23 +23,25 @@ const navbarInit = () => {
         opacity = 1 - alpha * 0.5;
         blur = alpha * 10;
       }
-      navbar.style.backgroundColor = `rgba(255, 218, 145, ${opacity})`;
-      navbarContainer.style.backgroundColor = `rgba(255, 218, 145, ${opacity})`;
+      navbar.style.backgroundColor = `rgba(74, 210, 249, ${opacity})`;
+      navbarContainer.style.backgroundColor = `rgba(74, 210, 249, ${opacity})`;
       navbar.style.backdropFilter = `blur(${blur}px)`;
       navbarContainer.style.backdropFilter = `blur(${blur}px)`;
     };
     handleAlpha();
-    document.addEventListener('scroll', () => handleAlpha());
+    document.addEventListener("scroll", () => handleAlpha());
   }
 
-  const navbarNav = document.querySelector('[data-navbar-nav]');
-  navbarNav.addEventListener('click', (event) => {
-    if (event.target.closest('li')) {
-      const navbarToggler = document.querySelector('[data-bs-toggle]');
-      const navbarItemContainer = document.querySelector('[data-navbar-collapse]');
-      navbarToggler.setAttribute('aria-expanded', false);
-      navbarItemContainer.classList.remove('show');
-      navbarToggler.classList.add('collapsed');
+  const navbarNav = document.querySelector("[data-navbar-nav]");
+  navbarNav.addEventListener("click", (event) => {
+    if (event.target.closest("li")) {
+      const navbarToggler = document.querySelector("[data-bs-toggle]");
+      const navbarItemContainer = document.querySelector(
+        "[data-navbar-collapse]"
+      );
+      navbarToggler.setAttribute("aria-expanded", false);
+      navbarItemContainer.classList.remove("show");
+      navbarToggler.classList.add("collapsed");
     }
   });
 };
